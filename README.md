@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-AQUI_VA_EL_GIF
+  <img src="assets/escena-neon.svg" width="100%" />
 </p>
 
 <p align="center">
