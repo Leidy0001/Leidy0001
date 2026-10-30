@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="130" viewBox="0 0 400 130">
+  <style>
+    .t { font: 700 19px 'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif; fill: #ff4ecd; }
+    .d { font: 400 13px 'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif; fill: #b8b5d6; }
+    .l { font: 600 12px 'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif; fill: #c9d1d9; }
+    .hud { animation: pulse 2.6s ease-in-out infinite; }
+    .scan { animation: scan 4s linear infinite; }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+    @keyframes scan { from { transform: translateY(-12px); } to { transform: translateY(134px); } }
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f0c29"/>
+      <stop offset="1" stop-color="#1b1145"/>
+    </linearGradient>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.07"/>
+    </pattern>
+    <linearGradient id="sl" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff4ecd" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ff4ecd" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#ff4ecd" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="clip"><rect x="0.5" y="0.5" width="399" height="129" rx="10"/></clipPath>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect width="400" height="130" fill="url(#bg)"/>
+    <rect width="400" height="130" fill="url(#grid)"/>
+    <rect class="scan" x="0" y="0" width="400" height="10" fill="url(#sl)"/>
+  </g>
+  <rect x="0.5" y="0.5" width="399" height="129" rx="10" fill="none" stroke="#00f7ff" stroke-opacity="0.55"/>
+  <g class="hud" fill="none" stroke="#ff4ecd" stroke-width="2.5" stroke-linecap="round" filter="url(#glow)">
+    <path d="M9 27V9H27"/>
+    <path d="M373 9H391V27"/>
+    <path d="M9 103V121H27"/>
+    <path d="M391 103V121H373"/>
+  </g>
+  <text x="28" y="47" class="t">Hakathon_Grok</text>
+  <text x="28" y="73" class="d">Proyecto en equipo</text>
+  <circle cx="34" cy="100" r="6" fill="#00f7ff" filter="url(#glow)"/>
+  <text x="46" y="104" class="l">@DannyDev18</text>
+</svg>
