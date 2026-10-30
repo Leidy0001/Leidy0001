@@ -7,24 +7,37 @@
 </p>
 
 <p align="center">
+AQUI_VA_EL_GIF
+</p>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=Leidy0001&label=VISITAS&color=7b2ff7&style=for-the-badge" />
 </p>
 
 ---
 
-## 👩‍💻 Sobre mí
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=24&duration=2000&pause=1000&color=00F7FF&repeat=false&width=500&height=45&lines=Sobre+m%C3%AD" />
 
 - 🎓 Estudiante de **Ingeniería de Software** en la Universidad Técnica de Ambato (FISEI)
 - 🚀 Apasionada por la tecnología y el emprendimiento
 - 💡 Mi meta: crear una empresa tecnológica que impulse a jóvenes emprendedores
 - 📱 Creadora de contenido digital
 
-## 🌎 De dónde soy
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=24&duration=2000&pause=1000&color=FF4ECD&repeat=false&width=500&height=45&lines=De+d%C3%B3nde+soy" />
 
 - 🌊 Nací en **Guayaquil**, la Perla del Pacífico
 - 🌸 Vivo en **Ambato**, la tierra de las flores y de las frutas
-- 🇪🇨 Orgullosamente **ecuatoriana**
+- <img src="https://flagcdn.com/w20/ec.png" width="18" /> Orgullosamente **ecuatoriana**
+
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=24&duration=2000&pause=1000&color=00F7FF&repeat=false&width=500&height=45&lines=Ahora+mismo..." />
+
+- 🔭 Trabajando en un catálogo de cursos con agente de IA para el CTT-FISEI
+- 🌱 Aprendiendo francés y nuevas tecnologías web
+- 🤝 Abierta a colaborar en proyectos de tecnología y emprendimiento
+- ⚡ Dato curioso: también creo contenido para redes sociales
 
 ---
+
 <details open>
 <summary><h2>💜 Mis Proyectos</h2></summary>
 <br>
@@ -48,6 +61,7 @@
 <summary><h2>🤝 Proyectos en los que he colaborado</h2></summary>
 <br>
 <p align="center">
+  <a href="https://github.com/Sandra-0014/SIHA"><img src="cards/c-siha.svg" width="32%" /></a>
   <a href="https://github.com/DannyDev18/Hakathon_Grok"><img src="cards/c-hakathon-grok.svg" width="32%" /></a>
   <a href="https://github.com/ReaperMag/Catalogo-Peliculas"><img src="cards/c-catalogo-peliculas.svg" width="32%" /></a>
   <a href="https://github.com/ReaperMag/Transporte-Interprovincial"><img src="cards/c-transporte.svg" width="32%" /></a>
@@ -55,9 +69,12 @@
   <a href="https://github.com/martin-cnr/Formulario"><img src="cards/c-formulario.svg" width="32%" /></a>
 </p>
 </details>
+
 ---
 
-<h2 align="center">⚡ Tecnologías con las que he trabajado</h2>
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=24&duration=2000&pause=1000&color=00F7FF&center=true&repeat=false&width=600&height=45&lines=Tecnolog%C3%ADas+con+las+que+he+trabajado" />
+</p>
 
 <h3 align="center">💻 Lenguajes</h3>
 <p align="center">
@@ -98,7 +115,23 @@
 
 ---
 
-## 🌐 Encuéntrame en
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=24&duration=2000&pause=1000&color=FF4ECD&center=true&repeat=false&width=600&height=45&lines=Mi+actividad+en+GitHub" />
+</p>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=Leidy0001&locale=es&background=0f0c29&border=7b2ff7&stroke=7b2ff7&ring=00f7ff&fire=ff4ecd&currStreakNum=00f7ff&sideNums=ff4ecd&currStreakLabel=00f7ff&sideLabels=c9d1d9&dates=8b8fb3" />
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Leidy0001/Leidy0001/output/github-snake-dark.svg" />
+</p>
+
+---
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=24&duration=2000&pause=1000&color=00F7FF&center=true&repeat=false&width=600&height=45&lines=Encu%C3%A9ntrame+en" />
+</p>
 
 <p align="center">
   <a href="https://www.instagram.com/leidy_perez_00/">
@@ -110,6 +143,10 @@
   <a href="TU_LINK_DE_FACEBOOK">
     <img src="https://img.shields.io/badge/Facebook-0f0c29?style=for-the-badge&logo=facebook&logoColor=00f7ff" />
   </a>
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=500&size=18&duration=4000&pause=1500&color=FF4ECD&center=true&vCenter=true&width=700&lines=%22Programo+de+noche%2C+construyo+el+futuro+de+d%C3%ADa%22+%F0%9F%8C%99;%22El+c%C3%B3digo+es+mi+forma+de+crear+oportunidades%22+%E2%9C%A8" />
 </p>
 
 <p align="center">
