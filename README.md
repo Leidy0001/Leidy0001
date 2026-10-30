@@ -25,63 +25,20 @@
 - 🇪🇨 Orgullosamente **ecuatoriana**
 
 ---
-
 <details open>
 <summary><h2>💜 Mis Proyectos</h2></summary>
 <br>
-<table>
-<tr>
-<td align="center" width="33%">
-<a href="https://github.com/Leidy0001/Ape4-Grafos"><b>📁 Ape4-Grafos</b></a><br>
-<sub>Implementación y recorridos de grafos</sub><br><br>
-<img src="https://img.shields.io/badge/C%2B%2B-0f0c29?style=flat-square&logo=cplusplus&logoColor=00f7ff" />
-</td>
-<td align="center" width="33%">
-<a href="https://github.com/Leidy0001/APE_Arboles"><b>📁 APE_Arboles</b></a><br>
-<sub>Estructuras de datos con árboles</sub><br><br>
-<img src="https://img.shields.io/badge/C%2B%2B-0f0c29?style=flat-square&logo=cplusplus&logoColor=00f7ff" />
-</td>
-<td align="center" width="33%">
-<a href="https://github.com/Leidy0001/arbol-bst-empresa-cpp"><b>📁 arbol-bst-empresa-cpp</b></a><br>
-<sub>Gestión de una empresa con árbol BST</sub><br><br>
-<img src="https://img.shields.io/badge/C%2B%2B-0f0c29?style=flat-square&logo=cplusplus&logoColor=00f7ff" />
-</td>
-</tr>
-<tr>
-<td align="center" width="33%">
-<a href="https://github.com/Leidy0001/Prueba_Practica_Arboles_cpp"><b>📁 Prueba_Practica_Arboles</b></a><br>
-<sub>Prueba práctica de árboles</sub><br><br>
-<img src="https://img.shields.io/badge/C%2B%2B-0f0c29?style=flat-square&logo=cplusplus&logoColor=00f7ff" />
-</td>
-<td align="center" width="33%">
-<a href="https://github.com/Leidy0001/Recorridos-de-rboles-Binarios_Tarea2.2"><b>📁 Recorridos de Árboles Binarios</b></a><br>
-<sub>Recorridos inorden, preorden y postorden</sub><br><br>
-<img src="https://img.shields.io/badge/C%2B%2B-0f0c29?style=flat-square&logo=cplusplus&logoColor=00f7ff" />
-</td>
-<td align="center" width="33%">
-<a href="https://github.com/Leidy0001/registro-calificaciones-cpp"><b>📁 registro-calificaciones-cpp</b></a><br>
-<sub>Sistema de registro de calificaciones</sub><br><br>
-<img src="https://img.shields.io/badge/C%2B%2B-0f0c29?style=flat-square&logo=cplusplus&logoColor=00f7ff" />
-</td>
-</tr>
-<tr>
-<td align="center" width="33%">
-<a href="https://github.com/Leidy0001/Registro-de-calificaciones-de-estudiantes"><b>📁 Registro de Calificaciones</b></a><br>
-<sub>Registro de calificaciones de estudiantes</sub><br><br>
-<img src="https://img.shields.io/badge/Proyecto-0f0c29?style=flat-square&logo=github&logoColor=00f7ff" />
-</td>
-<td align="center" width="33%">
-<a href="https://github.com/Leidy0001/ComputacionVisual"><b>📁 ComputacionVisual</b></a><br>
-<sub>Proyectos de computación visual</sub><br><br>
-<img src="https://img.shields.io/badge/Proyecto-0f0c29?style=flat-square&logo=github&logoColor=00f7ff" />
-</td>
-<td align="center" width="33%">
-<a href="https://github.com/Leidy0001/comandos_basicos"><b>📁 comandos_basicos</b></a><br>
-<sub>Práctica de comandos básicos de Git</sub><br><br>
-<img src="https://img.shields.io/badge/Git-0f0c29?style=flat-square&logo=git&logoColor=00f7ff" />
-</td>
-</tr>
-</table>
+<p align="center">
+  <a href="https://github.com/Leidy0001/Ape4-Grafos"><img src="cards/ape4-grafos.svg" width="32%" /></a>
+  <a href="https://github.com/Leidy0001/APE_Arboles"><img src="cards/ape-arboles.svg" width="32%" /></a>
+  <a href="https://github.com/Leidy0001/arbol-bst-empresa-cpp"><img src="cards/arbol-bst-empresa.svg" width="32%" /></a>
+  <a href="https://github.com/Leidy0001/Prueba_Practica_Arboles_cpp"><img src="cards/prueba-arboles.svg" width="32%" /></a>
+  <a href="https://github.com/Leidy0001/Recorridos-de-rboles-Binarios_Tarea2.2"><img src="cards/recorridos-arboles.svg" width="32%" /></a>
+  <a href="https://github.com/Leidy0001/registro-calificaciones-cpp"><img src="cards/registro-calificaciones-cpp.svg" width="32%" /></a>
+  <a href="https://github.com/Leidy0001/Registro-de-calificaciones-de-estudiantes"><img src="cards/registro-estudiantes.svg" width="32%" /></a>
+  <a href="https://github.com/Leidy0001/ComputacionVisual"><img src="cards/computacion-visual.svg" width="32%" /></a>
+  <a href="https://github.com/Leidy0001/comandos_basicos"><img src="cards/comandos-basicos.svg" width="32%" /></a>
+</p>
 <p align="center">
   <a href="https://github.com/Leidy0001?tab=repositories"><img src="https://img.shields.io/badge/VER%20TODOS%20MIS%20REPOS-0f0c29?style=for-the-badge&logo=github&logoColor=00f7ff" /></a>
 </p>
@@ -90,50 +47,13 @@
 <details open>
 <summary><h2>🤝 Proyectos en los que he colaborado</h2></summary>
 <br>
-<table>
-<tr>
-<td align="center" width="33%">
-<a href="https://github.com/Sandra-0014/SIHA"><b>✨ SIHA</b></a><br><br>
-<img src="https://img.shields.io/badge/Sandra--0014-0f0c29?style=flat-square&logo=github&logoColor=ff4ecd" />
-</td>
-<td align="center" width="33%">
-<a href="https://github.com/Sandra-0014/Proyecto_SmartCampus_UTA"><b>✨ SmartCampus UTA</b></a><br><br>
-<img src="https://img.shields.io/badge/Sandra--0014-0f0c29?style=flat-square&logo=github&logoColor=ff4ecd" />
-</td>
-<td align="center" width="33%">
-<a href="https://github.com/DannyDev18/Hakathon_Grok"><b>✨ Hakathon_Grok</b></a><br><br>
-<img src="https://img.shields.io/badge/DannyDev18-0f0c29?style=flat-square&logo=github&logoColor=ff4ecd" />
-</td>
-</tr>
-<tr>
-<td align="center" width="33%">
-<a href="https://github.com/ReaperMag/Catalogo-Peliculas"><b>✨ Catalogo-Peliculas</b></a><br><br>
-<img src="https://img.shields.io/badge/ReaperMag-0f0c29?style=flat-square&logo=github&logoColor=ff4ecd" />
-</td>
-<td align="center" width="33%">
-<a href="https://github.com/ReaperMag/Transporte-Interprovincial"><b>✨ Transporte-Interprovincial</b></a><br><br>
-<img src="https://img.shields.io/badge/ReaperMag-0f0c29?style=flat-square&logo=github&logoColor=ff4ecd" />
-</td>
-<td align="center" width="33%">
-<a href="https://github.com/PedroPapus/pedropapus_cleaniq"><b>✨ CleanIQ</b></a><br><br>
-<img src="https://img.shields.io/badge/PedroPapus-0f0c29?style=flat-square&logo=github&logoColor=ff4ecd" />
-</td>
-</tr>
-<tr>
-<td align="center" width="33%">
-<a href="https://github.com/Sandra-0014/ESTRUCTURA-DE-DATOS"><b>✨ Estructura de Datos</b></a><br><br>
-<img src="https://img.shields.io/badge/Sandra--0014-0f0c29?style=flat-square&logo=github&logoColor=ff4ecd" />
-</td>
-<td align="center" width="33%">
-<a href="https://github.com/Sandra-0014/PRUEBA-PRACTICA-"><b>✨ Prueba Práctica</b></a><br><br>
-<img src="https://img.shields.io/badge/Sandra--0014-0f0c29?style=flat-square&logo=github&logoColor=ff4ecd" />
-</td>
-<td align="center" width="33%">
-<a href="https://github.com/martin-cnr/Formulario"><b>✨ Formulario</b></a><br><br>
-<img src="https://img.shields.io/badge/martin--cnr-0f0c29?style=flat-square&logo=github&logoColor=ff4ecd" />
-</td>
-</tr>
-</table>
+<p align="center">
+  <a href="https://github.com/DannyDev18/Hakathon_Grok"><img src="cards/c-hakathon-grok.svg" width="32%" /></a>
+  <a href="https://github.com/ReaperMag/Catalogo-Peliculas"><img src="cards/c-catalogo-peliculas.svg" width="32%" /></a>
+  <a href="https://github.com/ReaperMag/Transporte-Interprovincial"><img src="cards/c-transporte.svg" width="32%" /></a>
+  <a href="https://github.com/PedroPapus/pedropapus_cleaniq"><img src="cards/c-cleaniq.svg" width="32%" /></a>
+  <a href="https://github.com/martin-cnr/Formulario"><img src="cards/c-formulario.svg" width="32%" /></a>
+</p>
 </details>
 ---
 
