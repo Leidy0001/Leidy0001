@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leidy Pérez | Portafolio</title>
+  <meta name="description" content="Portafolio de Leidy Pérez, estudiante de Ingeniería de Software en la Universidad Técnica de Ambato." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg1: #0f0c29;
+      --bg2: #1b1145;
+      --cyan: #00f7ff;
+      --purple: #7b2ff7;
+      --pink: #ff4ecd;
+      --text: #c9d1d9;
+      --soft: #b8b5d6;
+      --font-title: 'Orbitron', 'Segoe UI', sans-serif;
+      --font-body: 'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--text);
+      background: linear-gradient(160deg, var(--bg1), var(--bg2)) fixed;
+      min-height: 100vh;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Cuadrícula sutil y estrellas de fondo */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+      background-size: 40px 40px;
+      pointer-events: none;
+      z-index: -2;
+    }
+    #stars { position: fixed; inset: 0; pointer-events: none; z-index: -1; }
+    .star {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: #fff;
+      animation: twinkle var(--d, 3s) ease-in-out infinite;
+      animation-delay: var(--delay, 0s);
+    }
+    @keyframes twinkle { 0%, 100% { opacity: 1; } 50% { opacity: 0.1; } }
+
+    a { color: var(--cyan); text-decoration: none; }
+    a:hover { color: var(--pink); }
+
+    /* Menú fijo */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 10;
+      background: rgba(15, 12, 41, 0.85);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(123, 47, 247, 0.5);
+      box-shadow: 0 0 18px rgba(123, 47, 247, 0.35);
+    }
+    .nav-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0.8rem 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .logo {
+      font-family: var(--font-title);
+      font-weight: 900;
+      color: var(--cyan);
+      text-shadow: 0 0 8px var(--cyan);
+      letter-spacing: 2px;
+    }
+    .logo span { color: var(--pink); text-shadow: 0 0 8px var(--pink); }
+    nav ul { list-style: none; display: flex; gap: 1.1rem; flex-wrap: wrap; }
+    nav ul a {
+      font-family: var(--font-title);
+      font-size: 0.72rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--text);
+      transition: color 0.2s, text-shadow 0.2s;
+    }
+    nav ul a:hover { color: var(--cyan); text-shadow: 0 0 8px var(--cyan); }
+    .menu-btn {
+      display: none;
+      background: none;
+      border: 1px solid var(--cyan);
+      color: var(--cyan);
+      font-size: 1.3rem;
+      padding: 0.1rem 0.6rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    main { max-width: 1100px; margin: 0 auto; padding: 0 1.2rem; }
+
+    /* Inicio */
+    .hero { padding: 7rem 0 2rem; text-align: center; }
+    .hero h1 {
+      font-family: var(--font-title);
+      font-weight: 900;
+      font-size: clamp(2.2rem, 7vw, 4.2rem);
+      color: #fff;
+      letter-spacing: 3px;
+      text-shadow: 0 0 10px var(--purple), 0 0 25px var(--purple), 0 0 45px var(--cyan);
+    }
+    .subtitle {
+      font-family: var(--font-title);
+      color: var(--soft);
+      letter-spacing: 2px;
+      margin-top: 0.4rem;
+      font-size: clamp(0.85rem, 2.5vw, 1.1rem);
+    }
+    .typing {
+      font-family: var(--font-title);
+      font-weight: 700;
+      color: var(--cyan);
+      text-shadow: 0 0 8px var(--cyan);
+      font-size: clamp(1rem, 3.5vw, 1.4rem);
+      min-height: 2.2em;
+      margin: 1.4rem 0 1.6rem;
+    }
+    .typing::after {
+      content: "▌";
+      margin-left: 2px;
+      animation: blink 0.8s steps(1) infinite;
+    }
+    @keyframes blink { 50% { opacity: 0; } }
+    .scene {
+      width: 100%;
+      max-width: 900px;
+      border-radius: 12px;
+      border: 1px solid rgba(0, 247, 255, 0.4);
+      box-shadow: 0 0 25px rgba(123, 47, 247, 0.5);
+      image-rendering: pixelated;
+    }
+    .visits { margin-top: 1.4rem; }
+
+    /* Secciones */
+    section { padding: 3.5rem 0 1rem; }
+    h2 {
+      font-family: var(--font-title);
+      font-weight: 700;
+      font-size: clamp(1.3rem, 4vw, 1.8rem);
+      margin-bottom: 1.4rem;
+      color: var(--cyan);
+      text-shadow: 0 0 8px var(--cyan), 0 0 20px rgba(0, 247, 255, 0.5);
+      animation: neon 4s linear infinite;
+    }
+    h2.pink { color: var(--pink); text-shadow: 0 0 8px var(--pink), 0 0 20px rgba(255, 78, 205, 0.5); }
+    h2.center { text-align: center; }
+    @keyframes neon { 0%, 46%, 50%, 100% { opacity: 1; } 48% { opacity: 0.6; } }
+    h3 {
+      font-family: var(--font-title);
+      font-size: 1rem;
+      color: #fff;
+      text-align: center;
+      margin: 1.8rem 0 0.9rem;
+      letter-spacing: 1px;
+    }
+
+    .panel {
+      background: rgba(15, 12, 41, 0.7);
+      border: 1px solid rgba(123, 47, 247, 0.55);
+      border-radius: 12px;
+      padding: 1.4rem 1.6rem;
+      position: relative;
+      box-shadow: inset 0 0 25px rgba(123, 47, 247, 0.15);
+    }
+    .panel::before, .panel::after {
+      content: "";
+      position: absolute;
+      width: 18px; height: 18px;
+      border: 2px solid var(--cyan);
+      filter: drop-shadow(0 0 4px var(--cyan));
+      animation: pulse 2.6s ease-in-out infinite;
+    }
+    .panel::before { top: 8px; left: 8px; border-right: 0; border-bottom: 0; }
+    .panel::after { bottom: 8px; right: 8px; border-left: 0; border-top: 0; }
+    .panel.pink::before, .panel.pink::after { border-color: var(--pink); filter: drop-shadow(0 0 4px var(--pink)); }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+    .panel ul { list-style: none; display: grid; gap: 0.6rem; }
+    .panel li { padding-left: 0.2rem; }
+    .panel strong { color: #fff; }
+    .flag { width: 18px; vertical-align: middle; margin-right: 4px; }
+
+    .about-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; }
+    .about-grid h2 { font-size: 1.15rem; }
+
+    /* Tarjetas de proyectos */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1rem;
+    }
+    .cards a { display: block; border-radius: 10px; transition: transform 0.2s, box-shadow 0.2s; }
+    .cards a:hover { transform: translateY(-4px); box-shadow: 0 0 20px rgba(0, 247, 255, 0.45); }
+    .cards.collab a:hover { box-shadow: 0 0 20px rgba(255, 78, 205, 0.45); }
+    .cards img { width: 100%; display: block; }
+    .center { text-align: center; }
+    .btn-wrap { text-align: center; margin-top: 1.6rem; }
+
+    .icons, .badges { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.6rem; }
+    .icons img { max-width: 100%; }
+    .activity { display: grid; gap: 1.4rem; justify-items: center; }
+    .activity img { max-width: 100%; }
+
+    .quote {
+      font-family: var(--font-title);
+      color: var(--pink);
+      text-shadow: 0 0 8px var(--pink);
+      text-align: center;
+      margin-top: 2rem;
+      font-size: clamp(0.85rem, 2.5vw, 1.05rem);
+      min-height: 3em;
+      transition: opacity 0.6s;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding: 1.6rem 1rem 2rem;
+      text-align: center;
+      border-top: 1px solid rgba(0, 247, 255, 0.35);
+      font-size: 0.85rem;
+      color: var(--soft);
+    }
+
+    @media (max-width: 860px) {
+      .menu-btn { display: block; }
+      nav ul {
+        display: none;
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        flex-direction: column;
+        gap: 0;
+        background: rgba(15, 12, 41, 0.97);
+        border-bottom: 1px solid rgba(123, 47, 247, 0.5);
+      }
+      nav ul.open { display: flex; }
+      nav ul a { display: block; padding: 0.8rem 1.4rem; font-size: 0.8rem; }
+      .about-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 400px) {
+      .cards { grid-template-columns: 1fr; }
+      .panel { padding: 1.2rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div id="stars"></div>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="#inicio" class="logo">LEIDY<span>.DEV</span></a>
+      <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <ul>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#colaboraciones">Colaboraciones</a></li>
+        <li><a href="#tecnologias">Tecnologías</a></li>
+        <li><a href="#plugins">Plugins</a></li>
+        <li><a href="#actividad">Actividad</a></li>
+        <li><a href="#contacto">Encuéntrame</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Inicio -->
+    <header class="hero" id="inicio">
+      <h1>Leidy Pérez</h1>
+      <p class="subtitle">Software Engineering Student</p>
+      <p class="typing" id="typing" aria-live="polite"></p>
+      <img class="scene" src="assets/escena-neon.svg" alt="Escena pixel art: una chica programando de noche en su habitación neón" />
+      <p class="visits">
+        <img src="https://komarev.com/ghpvc/?username=Leidy0001&label=VISITAS&color=7b2ff7&style=for-the-badge" alt="Contador de visitas" />
+      </p>
+    </header>
+
+    <!-- Sobre mí / De dónde soy / Ahora mismo -->
+    <section id="sobre-mi">
+      <div class="about-grid">
+        <div class="panel">
+          <h2>Sobre mí</h2>
+          <ul>
+            <li>🎓 Estudiante de <strong>Ingeniería de Software</strong> en la Universidad Técnica de Ambato (FISEI)</li>
+            <li>🚀 Apasionada por la tecnología y el emprendimiento</li>
+            <li>💡 Mi meta: crear una empresa tecnológica que impulse a jóvenes emprendedores</li>
+            <li>📱 Creadora de contenido digital</li>
+          </ul>
+        </div>
+        <div class="panel pink" id="de-donde-soy">
+          <h2 class="pink">De dónde soy</h2>
+          <ul>
+            <li>🌊 Nací en <strong>Guayaquil</strong>, la Perla del Pacífico</li>
+            <li>🌸 Vivo en <strong>Ambato</strong>, la tierra de las flores y de las frutas</li>
+            <li><img class="flag" src="https://flagcdn.com/w20/ec.png" alt="Bandera de Ecuador" /> Orgullosamente <strong>ecuatoriana</strong></li>
+          </ul>
+        </div>
+        <div class="panel" id="ahora-mismo">
+          <h2>Ahora mismo...</h2>
+          <ul>
+            <li>🔭 Trabajando en un catálogo de cursos con agente de IA para el CTT-FISEI</li>
+            <li>🌱 Aprendiendo francés y nuevas tecnologías web</li>
+            <li>🤝 Abierta a colaborar en proyectos de tecnología y emprendimiento</li>
+            <li>⚡ Dato curioso: también creo contenido para redes sociales</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mis proyectos -->
+    <section id="proyectos">
+      <h2>💜 Mis Proyectos</h2>
+      <div class="cards">
+        <a href="https://github.com/Leidy0001/Ape4-Grafos"><img src="cards/ape4-grafos.svg" alt="Ape4-Grafos" loading="lazy" /></a>
+        <a href="https://github.com/Leidy0001/APE_Arboles"><img src="cards/ape-arboles.svg" alt="APE_Arboles" loading="lazy" /></a>
+        <a href="https://github.com/Leidy0001/arbol-bst-empresa-cpp"><img src="cards/arbol-bst-empresa.svg" alt="arbol-bst-empresa-cpp" loading="lazy" /></a>
+        <a href="https://github.com/Leidy0001/Prueba_Practica_Arboles_cpp"><img src="cards/prueba-arboles.svg" alt="Prueba Práctica Árboles" loading="lazy" /></a>
+        <a href="https://github.com/Leidy0001/Recorridos-de-rboles-Binarios_Tarea2.2"><img src="cards/recorridos-arboles.svg" alt="Recorridos de Árboles Binarios" loading="lazy" /></a>
+        <a href="https://github.com/Leidy0001/registro-calificaciones-cpp"><img src="cards/registro-calificaciones-cpp.svg" alt="registro-calificaciones-cpp" loading="lazy" /></a>
+        <a href="https://github.com/Leidy0001/Registro-de-calificaciones-de-estudiantes"><img src="cards/registro-estudiantes.svg" alt="Registro de Calificaciones" loading="lazy" /></a>
+        <a href="https://github.com/Leidy0001/ComputacionVisual"><img src="cards/computacion-visual.svg" alt="ComputacionVisual" loading="lazy" /></a>
+        <a href="https://github.com/Leidy0001/comandos_basicos"><img src="cards/comandos-basicos.svg" alt="comandos_basicos" loading="lazy" /></a>
+      </div>
+      <div class="btn-wrap">
+        <a href="https://github.com/Leidy0001?tab=repositories"><img src="https://img.shields.io/badge/VER%20TODOS%20MIS%20REPOS-0f0c29?style=for-the-badge&logo=github&logoColor=00f7ff" alt="Ver todos mis repos" /></a>
+      </div>
+    </section>
+
+    <!-- Colaboraciones -->
+    <section id="colaboraciones">
+      <h2 class="pink">🤝 Proyectos en los que he colaborado</h2>
+      <div class="cards collab">
+        <a href="https://github.com/Sandra-0014/SIHA"><img src="cards/c-siha.svg" alt="SIHA" loading="lazy" /></a>
+        <a href="https://github.com/DannyDev18/Hakathon_Grok"><img src="cards/c-hakathon-grok.svg" alt="Hakathon_Grok" loading="lazy" /></a>
+        <a href="https://github.com/ReaperMag/Catalogo-Peliculas"><img src="cards/c-catalogo-peliculas.svg" alt="Catalogo-Peliculas" loading="lazy" /></a>
+        <a href="https://github.com/ReaperMag/Transporte-Interprovincial"><img src="cards/c-transporte.svg" alt="Transporte-Interprovincial" loading="lazy" /></a>
+        <a href="https://github.com/PedroPapus/pedropapus_cleaniq"><img src="cards/c-cleaniq.svg" alt="CleanIQ" loading="lazy" /></a>
+        <a href="https://github.com/martin-cnr/Formulario"><img src="cards/c-formulario.svg" alt="Formulario" loading="lazy" /></a>
+      </div>
+    </section>
+
+    <!-- Tecnologías -->
+    <section id="tecnologias">
+      <h2 class="center">Tecnologías con las que he trabajado</h2>
+
+      <h3>💻 Lenguajes</h3>
+      <div class="icons"><img src="https://skillicons.dev/icons?i=py,java,cs,cpp,php,js&theme=dark" alt="Python, Java, C#, C++, PHP, JavaScript" /></div>
+
+      <h3>🎨 Frontend</h3>
+      <div class="icons"><img src="https://skillicons.dev/icons?i=html,css,react&theme=dark" alt="HTML, CSS, React" /></div>
+
+      <h3>⚙️ Backend y Frameworks</h3>
+      <div class="icons"><img src="https://skillicons.dev/icons?i=dotnet,supabase&theme=dark" alt=".NET, Supabase" /></div>
+
+      <h3>🗄️ Bases de datos y datos</h3>
+      <div class="icons"><img src="https://skillicons.dev/icons?i=mysql&theme=dark" alt="MySQL" /></div>
+      <div class="badges" style="margin-top: 0.8rem;">
+        <img src="https://img.shields.io/badge/SQL%20Server-0f0c29?style=for-the-badge&logoColor=00f7ff&labelColor=7b2ff7" alt="SQL Server" />
+        <img src="https://img.shields.io/badge/JSON-0f0c29?style=for-the-badge&logo=json&logoColor=00f7ff" alt="JSON" />
+      </div>
+
+      <h3>🛠️ Herramientas</h3>
+      <div class="icons"><img src="https://skillicons.dev/icons?i=git,github,vscode,visualstudio&theme=dark" alt="Git, GitHub, VS Code, Visual Studio" /></div>
+    </section>
+
+    <!-- Plugins -->
+    <section id="plugins">
+      <h2 class="pink center">🔌 Plugins y extensiones</h2>
+      <div class="badges">
+        <img src="https://img.shields.io/badge/Live%20Server-0f0c29?style=for-the-badge&logo=visualstudiocode&logoColor=00f7ff" alt="Live Server" />
+        <img src="https://img.shields.io/badge/Prettier-0f0c29?style=for-the-badge&logo=prettier&logoColor=ff4ecd" alt="Prettier" />
+        <img src="https://img.shields.io/badge/Python%20Extension-0f0c29?style=for-the-badge&logo=python&logoColor=00f7ff" alt="Python Extension" />
+        <img src="https://img.shields.io/badge/C%2FC%2B%2B%20Extension-0f0c29?style=for-the-badge&logo=cplusplus&logoColor=7b2ff7" alt="C/C++ Extension" />
+        <img src="https://img.shields.io/badge/GitHub%20Copilot-0f0c29?style=for-the-badge&logo=githubcopilot&logoColor=ff4ecd" alt="GitHub Copilot" />
+      </div>
+    </section>
+
+    <!-- Actividad -->
+    <section id="actividad">
+      <h2 class="pink center">Mi actividad en GitHub</h2>
+      <div class="activity">
+        <img src="https://streak-stats.demolab.com?user=Leidy0001&locale=es&background=0f0c29&border=7b2ff7&stroke=7b2ff7&ring=00f7ff&fire=ff4ecd&currStreakNum=00f7ff&sideNums=ff4ecd&currStreakLabel=00f7ff&sideLabels=c9d1d9&dates=8b8fb3" alt="Racha de commits" loading="lazy" />
+        <img src="https://raw.githubusercontent.com/Leidy0001/Leidy0001/output/github-snake-dark.svg" alt="Serpiente de contribuciones" loading="lazy" />
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+      <h2 class="center">Encuéntrame en</h2>
+      <div class="badges">
+        <a href="https://www.instagram.com/leidy_perez_00/"><img src="https://img.shields.io/badge/Instagram-7b2ff7?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
+        <a href="https://www.tiktok.com/@leidy_perez_01"><img src="https://img.shields.io/badge/TikTok-00f7ff?style=for-the-badge&logo=tiktok&logoColor=black" alt="TikTok" /></a>
+        <a href="TU_LINK_DE_FACEBOOK"><img src="https://img.shields.io/badge/Facebook-0f0c29?style=for-the-badge&logo=facebook&logoColor=00f7ff" alt="Facebook" /></a>
+      </div>
+      <p class="quote" id="quote"></p>
+    </section>
+  </main>
+
+  <footer>
+    Hecho con 💜 por <a href="https://github.com/Leidy0001">Leidy Pérez</a> · Ambato, Ecuador
+  </footer>
+
+  <script>
+    // Estrellas que titilan
+    const stars = document.getElementById("stars");
+    for (let i = 0; i < 90; i++) {
+      const s = document.createElement("span");
+      s.className = "star";
+      s.style.left = Math.random() * 100 + "%";
+      s.style.top = Math.random() * 100 + "%";
+      s.style.setProperty("--d", (2 + Math.random() * 3).toFixed(1) + "s");
+      s.style.setProperty("--delay", (-Math.random() * 4).toFixed(1) + "s");
+      if (Math.random() < 0.2) s.style.background = Math.random() < 0.5 ? "#00f7ff" : "#ff4ecd";
+      stars.appendChild(s);
+    }
+
+    // Texto que se escribe solo
+    const lines = [
+      "Hola, soy Leidy 👋",
+      "Estudiante de Ingeniería de Software",
+      "Creadora de contenido digital",
+      "Futura emprendedora tech 🚀",
+    ];
+    const typing = document.getElementById("typing");
+    let line = 0, pos = 0, deleting = false;
+    function type() {
+      const chars = Array.from(lines[line]);
+      typing.textContent = chars.slice(0, pos).join("");
+      if (!deleting && pos < chars.length) { pos++; setTimeout(type, 70); }
+      else if (!deleting) { deleting = true; setTimeout(type, 1500); }
+      else if (pos > 0) { pos--; setTimeout(type, 35); }
+      else { deleting = false; line = (line + 1) % lines.length; setTimeout(type, 400); }
+    }
+    type();
+
+    // Frases rotativas
+    const quotes = [
+      "\"Programo de noche, construyo el futuro de día\" 🌙",
+      "\"El código es mi forma de crear oportunidades\" ✨",
+    ];
+    const quote = document.getElementById("quote");
+    let q = 0;
+    quote.textContent = quotes[0];
+    setInterval(() => {
+      quote.style.opacity = 0;
+      setTimeout(() => { q = (q + 1) % quotes.length; quote.textContent = quotes[q]; quote.style.opacity = 1; }, 600);
+    }, 5000);
+
+    // Menú en celular
+    const btn = document.querySelector(".menu-btn");
+    const menu = document.querySelector("nav ul");
+    btn.addEventListener("click", () => {
+      const open = menu.classList.toggle("open");
+      btn.setAttribute("aria-expanded", open);
+    });
+    menu.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => {
+      menu.classList.remove("open");
+      btn.setAttribute("aria-expanded", "false");
+    }));
+  </script>
+</body>
+</html>
